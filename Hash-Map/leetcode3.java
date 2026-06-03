@@ -7,8 +7,6 @@ public class leetcode3
     public static void main(String[] args) {
         HashMap<Integer,Integer> map = new HashMap<>();
         int[] nums = {2,2,1};
-
-        int min = Integer.MAX_VALUE;
         for(int num : nums)
         {
             if(map.containsKey(num))
@@ -25,9 +23,8 @@ public class leetcode3
         int answer = 0 ;
         for(int i : map.keySet())
         {
-            if(map.get(i)<min)
+            if(map.get(i)==1)
             {
-                min = map.get(i);
                 answer = i ;
             }
         }
